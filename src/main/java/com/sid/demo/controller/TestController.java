@@ -13,6 +13,6 @@ public class TestController {
 
     @PostMapping("/test")
     public void testpost() {
-        System.out.println("in test");
+        System.out.println("in test post endpoint");
     }
 }
