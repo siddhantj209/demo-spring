@@ -15,8 +15,6 @@ public class DemoApplication {
 
 		int[] a = {1,4,2,6,5};
 		IntStream.of(a).max();
-		System.out.println(Arrays.stream(a).max().getAsInt());
-		System.out.println("hello world");
 	}
 
 }
