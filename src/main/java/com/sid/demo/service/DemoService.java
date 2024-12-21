@@ -10,6 +10,10 @@ public class DemoService {
         System.out.println("Deleting id: " + id);
     }
 
+    public void update(String id, String name) {
+        System.out.println("In update " + id + name);
+    }
+
     public int add(int a, int b) {
         return a+b;
     }
