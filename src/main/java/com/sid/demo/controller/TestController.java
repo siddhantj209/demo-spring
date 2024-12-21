@@ -1,6 +1,7 @@
 package com.sid.demo.controller;
 
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -9,8 +10,9 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class TestController {
     @GetMapping("/test")
-    public void test() {
-        System.out.println("in test");
+    public ResponseEntity<String> test() {
+        System.out.println("in test ");
+        return ResponseEntity.ok("test fine");
     }
 
     @PostMapping("/test")
