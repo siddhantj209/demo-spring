@@ -28,4 +28,9 @@ public class TestController {
     public void delete(String id) {
         demoService.delete(id);
     }
+
+    @PutMapping
+    public void update(String id, String name) {
+        demoService.update(id, name);
+    }
 }
